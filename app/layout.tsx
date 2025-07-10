@@ -2,25 +2,25 @@ import './global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { Navbar } from './components/nav'
+import { Header } from './components/header'
+import { CorporateFooter } from './components/corporate-footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'SEIKOU - Corporate Site',
+    template: '%s | SEIKOU',
   },
-  description: 'This is my portfolio.',
+  description: 'SEIKOU corporate website',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'SEIKOU',
+    description: 'SEIKOU corporate website',
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
+    siteName: 'SEIKOU',
+    locale: 'ja_JP',
     type: 'website',
   },
   robots: {
@@ -45,21 +45,21 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        'text-black bg-white',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
+      <body className="antialiased min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">
           {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
         </main>
+        <CorporateFooter />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
