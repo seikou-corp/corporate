@@ -74,11 +74,8 @@ export default function Page() {
       </div>
 
       <div className="relative -top-[530px] md:-top-[630px]">
-        <img
-          src="/images/about/about-2waves-bg.svg"
-          alt="ABOUT US"
-          className="w-screen max-h-[790px]"
-        />
+        <div className="w-screen h-[700px] mask-t-from-70% opacity-50 bg-[url(/images/about/about-2waves-bg1.svg)] bg-cover" />
+        <div className="w-screen absolute top-0 h-[700px] mask-t-from-70% opacity-50 bg-[url(/images/about/about-2waves-bg2.svg)] bg-cover" />
         <Image
           src="/images/about/about-01_top-whiteline01.png"
           alt="ABOUT US"
@@ -115,9 +112,8 @@ export default function Page() {
         {/* White section with ABOUT US */}
         {/* <div className="relative -top-[340px]"></div> */}
 
-        <div className="relative pt-[300px] sm:pt-[150px] md:pt-[150px] lg:pt-[0px] mx-auto px-4 bg-white w-full">
+        <div className="relative bg-gradient-to-b from-[rgba(255,255,255,0.5)] to-white mx-auto px-4 w-full">
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Left side text */}
             <div
               className={`text-center lg:text-left transition-all duration-1000 delay-1000 ${
                 isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
@@ -198,138 +194,135 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Services Section with Curved Lines */}
-        <div className="pt-[150px] pb-0 relative z-1">
-          <div className="max-w-7xl mx-auto px-4 text-[#272859]">
-            {/* Service Items with Curved Yellow Lines */}
+        <div className="pt-[150px] max-w-7xl mx-auto px-4 text-[#272859]">
+          {/* Service Items with Curved Yellow Lines */}
+          <div className="relative">
+            {/* E-commerce Section */}
+            <div className="relative mb-10">
+              <div className="relative z-10 text-center">
+                <div className="">
+                  <h3 className="font-mplus-rounded text-5xl font-thin mb-4">E-commerce</h3>
+                  <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
+                    長年にわたる輸入・小売業で培った経験と、
+                    <br />
+                    自社ECサイト「ジュエリーミュージアム」運営で得た実践的なノウハウを活かし、
+                    <br />
+                    EC事業の効率化を追求するためにシステム開発に特化しました。
+                  </p>
+                  <div className="mt-5 flex justify-center">
+                    <Image
+                      src="/images/about/about-01_plus.png"
+                      alt="E-commerce Mobile"
+                      width={77}
+                      height={77}
+                      className={`relative z-10 transition-all duration-700 ${
+                        isLoaded
+                          ? 'opacity-100 scale-100 rotate-0'
+                          : 'opacity-0 scale-50 rotate-180'
+                      }`}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-0 right-0 pointer-events-none">
+                <Image
+                  src="/images/about/about-01_mobile.png"
+                  alt="E-commerce Mobile Shadow"
+                  width={200}
+                  height={400}
+                  className={`relative z-1 -top-[40px] transition-all duration-1000 ${
+                    isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
+                  }`}
+                />
+                <Image
+                  src="/images/about/about-01_mobile-shadow.png"
+                  alt="E-commerce Mobile"
+                  width={200}
+                  height={400}
+                  className={`relative z-0 -top-[70px] transition-all duration-1000 delay-100 ${
+                    isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
+                  }`}
+                />
+              </div>
+            </div>
+
+            {/* Creative Section */}
+            <div className="relative mb-10">
+              <div className="relative z-10 text-center">
+                <div className="">
+                  <h3 className="font-mplus-rounded text-5xl font-thin mb-4">Creative</h3>
+                  <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
+                    アニメーション制作、Webサイト制作
+                    <br />
+                    自社ECサイト「ジュエリーミュージアム」の商品開発、
+                    <br />
+                    多岐にわたる実績を有しています。
+                    <br />
+                    <br />
+                    東映アニメーション株式会社様には、
+                    <br />
+                    人気アニメーション作品における
+                    <br />
+                    システム開発や自動化システムの開発・提供を通じて、
+                    <br />
+                    貢献させていただいております。
+                  </p>
+                  <div className="mt-5 flex justify-center">
+                    <Image
+                      src="/images/about/about-01_plus.png"
+                      alt="E-commerce Mobile"
+                      width={77}
+                      height={77}
+                      className={`relative z-10 transition-all duration-700 ${
+                        isLoaded
+                          ? 'opacity-100 scale-100 rotate-0'
+                          : 'opacity-0 scale-50 rotate-180'
+                      }`}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-[330px] left-0 pointer-events-none">
+                <Image
+                  src="/images/about/about-01_desktop.png"
+                  alt="Creative Desktop"
+                  width={320}
+                  height={270}
+                  className={`relative z-1 transition-all duration-1000 delay-200 ${
+                    isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
+                  }`}
+                />
+                <Image
+                  src="/images/about/about-01_desktop-shadow.png"
+                  alt="Creative Desktop Shadow"
+                  width={200}
+                  height={400}
+                  className={`relative z-0 -top-[30px] left-[40px] transition-all duration-1000 delay-300 ${
+                    isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
+                  }`}
+                />
+              </div>
+            </div>
+
+            {/* IT Solutions Section */}
             <div className="relative">
-              {/* E-commerce Section */}
-              <div className="relative mb-10">
-                <div className="relative z-10 text-center">
-                  <div className="">
-                    <h3 className="font-mplus-rounded text-5xl font-thin mb-4">E-commerce</h3>
-                    <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
-                      長年にわたる輸入・小売業で培った経験と、
-                      <br />
-                      自社ECサイト「ジュエリーミュージアム」運営で得た実践的なノウハウを活かし、
-                      <br />
-                      EC事業の効率化を追求するためにシステム開発に特化しました。
-                    </p>
-                    <div className="mt-5 flex justify-center">
-                      <Image
-                        src="/images/about/about-01_plus.png"
-                        alt="E-commerce Mobile"
-                        width={77}
-                        height={77}
-                        className={`relative z-10 transition-all duration-700 ${
-                          isLoaded
-                            ? 'opacity-100 scale-100 rotate-0'
-                            : 'opacity-0 scale-50 rotate-180'
-                        }`}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute top-0 right-0 pointer-events-none">
-                  <Image
-                    src="/images/about/about-01_mobile.png"
-                    alt="E-commerce Mobile Shadow"
-                    width={200}
-                    height={400}
-                    className={`relative z-1 -top-[40px] transition-all duration-1000 ${
-                      isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-                    }`}
-                  />
-                  <Image
-                    src="/images/about/about-01_mobile-shadow.png"
-                    alt="E-commerce Mobile"
-                    width={200}
-                    height={400}
-                    className={`relative z-0 -top-[70px] transition-all duration-1000 delay-100 ${
-                      isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-                    }`}
-                  />
-                </div>
-              </div>
-
-              {/* Creative Section */}
-              <div className="relative mb-10">
-                <div className="relative z-10 text-center">
-                  <div className="">
-                    <h3 className="font-mplus-rounded text-5xl font-thin mb-4">Creative</h3>
-                    <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
-                      アニメーション制作、Webサイト制作
-                      <br />
-                      自社ECサイト「ジュエリーミュージアム」の商品開発、
-                      <br />
-                      多岐にわたる実績を有しています。
-                      <br />
-                      <br />
-                      東映アニメーション株式会社様には、
-                      <br />
-                      人気アニメーション作品における
-                      <br />
-                      システム開発や自動化システムの開発・提供を通じて、
-                      <br />
-                      貢献させていただいております。
-                    </p>
-                    <div className="mt-5 flex justify-center">
-                      <Image
-                        src="/images/about/about-01_plus.png"
-                        alt="E-commerce Mobile"
-                        width={77}
-                        height={77}
-                        className={`relative z-10 transition-all duration-700 ${
-                          isLoaded
-                            ? 'opacity-100 scale-100 rotate-0'
-                            : 'opacity-0 scale-50 rotate-180'
-                        }`}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute top-[330px] left-0 pointer-events-none">
-                  <Image
-                    src="/images/about/about-01_desktop.png"
-                    alt="Creative Desktop"
-                    width={320}
-                    height={270}
-                    className={`relative z-1 transition-all duration-1000 delay-200 ${
-                      isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-                    }`}
-                  />
-                  <Image
-                    src="/images/about/about-01_desktop-shadow.png"
-                    alt="Creative Desktop Shadow"
-                    width={200}
-                    height={400}
-                    className={`relative z-0 -top-[30px] left-[40px] transition-all duration-1000 delay-300 ${
-                      isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-                    }`}
-                  />
-                </div>
-              </div>
-
-              {/* IT Solutions Section */}
-              <div className="relative">
-                <div className="text-center">
-                  <div className="">
-                    <h3 className="font-mplus-rounded text-5xl font-thin mb-4">IT Solutions</h3>
-                    <p className="mb-4 bg-white/60 p-8 leading-relaxed inline-block">
-                      ECサイト運営の効率化を支援する
-                      <br />
-                      自社サービス「Rakubo」の開発・提供に加え、
-                      <br />
-                      大手企業様のシステム開発や
-                      <br />
-                      自動化システムの開発・提供も行っています。
-                    </p>
-                    <p className="text-2xl text-gray-700 mt-14 font-normal leading-relaxed">
-                      EC運営で培った豊富な経験と、クリエイティブ力を融合し
-                      <br />
-                      お客様のビジネスを総合的に支援できる点が強みです。
-                    </p>
-                  </div>
+              <div className="text-center">
+                <div className="">
+                  <h3 className="font-mplus-rounded text-5xl font-thin mb-4">IT Solutions</h3>
+                  <p className="mb-4 bg-white/60 p-8 leading-relaxed inline-block">
+                    ECサイト運営の効率化を支援する
+                    <br />
+                    自社サービス「Rakubo」の開発・提供に加え、
+                    <br />
+                    大手企業様のシステム開発や
+                    <br />
+                    自動化システムの開発・提供も行っています。
+                  </p>
+                  <p className="text-2xl text-gray-700 mt-14 font-normal leading-relaxed">
+                    EC運営で培った豊富な経験と、クリエイティブ力を融合し
+                    <br />
+                    お客様のビジネスを総合的に支援できる点が強みです。
+                  </p>
                 </div>
               </div>
             </div>
@@ -620,7 +613,7 @@ export default function Page() {
         </div>
 
         {/* Bottom Rakubo Tagline */}
-        <div className="bg-white py-8 border-t">
+        <div className="py-8 border-t">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <p className="text-lg ">Rakuboで、もっとラクに。もっと楽しく。</p>
           </div>

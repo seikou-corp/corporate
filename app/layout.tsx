@@ -1,7 +1,5 @@
 import './global.css'
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import { Noto_Sans_JP, M_PLUS_Rounded_1c } from 'next/font/google'
 import { Header } from './components/header'
 import { CorporateFooter } from './components/corporate-footer'
@@ -63,8 +61,6 @@ export default function RootLayout({
       lang="ja"
       className={cx(
         'text-black bg-white',
-        GeistSans.variable,
-        GeistMono.variable,
         notoSansJP.variable,
         mPlusRounded1c.variable
       )}
