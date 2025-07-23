@@ -264,5 +264,6 @@ table {
   body {
     background-color: var(--background);
     color: var(--foreground);
+    font-family: var(--font-noto-sans-jp), 'Noto Sans JP', sans-serif;
   }
 }
