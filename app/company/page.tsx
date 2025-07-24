@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function CompanyPage() {
   const companyImages = [
     { src: '/images/company_01.jpg', alt: 'Company Image 1', id: 'member' },
-    { src: '/images/company_02.jpg', alt: 'Company Image 2', id: 'location'},
-    { src: '/images/company_03.jpg', alt: 'Company Image 3', id: 'history' },
-    { src: '/images/company_04.jpg', alt: 'Company Image 4', id: 'profile' },
+    { src: '/images/company_02.jpg', alt: 'Company Image 2', id: 'about-oizumi'},
+    // { src: '/images/company_03.jpg', alt: 'Company Image 3', id: 'location' },
+    { src: '/images/company_04.jpg', alt: 'Company Image 4', id: 'history' },
   ]
 
   return (

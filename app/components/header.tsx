@@ -107,7 +107,7 @@ export function Header() {
             </Link>
             <Link
               href="/news"
-              className="relative text-gray-900 hover:text-gray-700 font-medium transition-colors py-1"
+              className="pointer-events-none relative text-gray-300 hover:text-gray-700 font-medium transition-colors py-1"
             >
               NEWS
               {isActive('/news') && (
