@@ -231,14 +231,12 @@ export default function Page() {
                 </div>
               </div>
               <div className="absolute top-0 right-0 pointer-events-none">
-                <Image
+                <img
                   src="/images/about/about-01_mobile.png"
                   alt="E-commerce Mobile Shadow"
                   width={200}
                   height={400}
-                  className={`relative z-1 -top-[40px] transition-all duration-1000 ${
-                    isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-                  }`}
+                  className={`transform transition-transform duration-300 animate-float-slow relative z-1 -top-[40px]`}
                 />
                 <Image
                   src="/images/about/about-01_mobile-shadow.png"
@@ -289,14 +287,12 @@ export default function Page() {
                 </div>
               </div>
               <div className="absolute top-[300px] lg:top-[330px] scale-70 lg:scale-100 z-0 -left-[40px] lg:left-0 pointer-events-none">
-                <Image
+                <img
                   src="/images/about/about-01_desktop.png"
                   alt="Creative Desktop"
                   width={320}
                   height={270}
-                  className={`relative z-1 transition-all duration-1000 delay-200 ${
-                    isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-                  }`}
+                  className={`transform transition-transform duration-300 animate-float relative z-1`}
                 />
                 <Image
                   src="/images/about/about-01_desktop-shadow.png"
@@ -369,7 +365,7 @@ export default function Page() {
 
             {/* Right side - Mission icon */}
             <div className="absolute z-0 right-0 -top-[50px] sm:-top-[100px]">
-              <Image
+              <img
                 src="/images/about/about-01_mission-icon.png"
                 alt="Mission Icon"
                 width={300}
