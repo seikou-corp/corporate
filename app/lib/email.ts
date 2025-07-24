@@ -31,7 +31,6 @@ export async function sendContactEmail(data: ContactFormData) {
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
     お名前: ${data.lastName} ${data.firstName}
-    ${data.lastNameKana && data.firstNameKana ? `フリガナ: ${data.lastNameKana} ${data.firstNameKana}` : ''}
     会社名: ${data.company || 'なし'}
     メールアドレス: ${data.email}
     電話番号: ${data.phone || 'なし'}

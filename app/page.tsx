@@ -358,9 +358,9 @@ export default function Page() {
                 長年の輸入・小売業を通じてマイナス要因を減らし、私たちは仕入・運営の機能を最適化しました。
                 <br />
                 「日々の課題解決に追われ、本来のマーケティング戦略に時間を割けないお客様」<span className="inline sm:hidden">、</span>
-                <br class="hidden sm:block"/>
+                <br className="hidden sm:block"/>
                 その悩み、私たちは解決します。EC運営のプロフェッショナルとして、
-                <br class="hidden sm:block"/>
+                <br className="hidden sm:block"/>
                 マーケター・クリエーターとして蓄積してきた知見をビジネスに実装します。
                 <br />
                 EC運営者の皆様が、創造的な仕事に集中できる未来を目指し続けて下さい。
@@ -412,7 +412,7 @@ export default function Page() {
                   <br />
                   そして、結果的に業績向上にも繋がると信じています。
                   <br />
-                  新しい価値創造に時間を使えるようになる<br class="hidden sm:block"/>世界を目指します。
+                  新しい価値創造に時間を使えるようになる<br className="hidden sm:block"/>世界を目指します。
                 </p>
               </div>
               <div className="absolute z-0 -left-[50px] sm:-left-[40px] lg:left-0 top-[350px] sm:-top-[10px] lg:-top-[30px]">

@@ -1,7 +1,12 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import type { google } from "googlemaps"
+
+declare global {
+  interface Window {
+    google: any
+  }
+}
 
 interface GoogleMapProps {
   center: {
@@ -14,7 +19,7 @@ interface GoogleMapProps {
 
 export default function GoogleMap({ center, zoom = 15, className = "" }: GoogleMapProps) {
   const mapRef = useRef<HTMLDivElement>(null)
-  const mapInstanceRef = useRef<google.maps.Map | null>(null)
+  const mapInstanceRef = useRef<any>(null)
 
   useEffect(() => {
     if (!mapRef.current) return
