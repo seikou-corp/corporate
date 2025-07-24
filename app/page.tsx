@@ -101,7 +101,7 @@ export default function Page() {
             alt="ABOUT US"
             width={400}
             height={150}
-            className={`mx-auto transition-all duration-700 delay-800 ${
+            className={`px-8 md:px-0 mx-auto transition-all duration-700 delay-800 ${
               isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
             }`}
           />
@@ -111,13 +111,13 @@ export default function Page() {
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            株式会社 SEIKOU は、東京都練馬区に拠点を置く、
+            株式会社 SEIKOU は、<br className="block sm:hidden" />東京都練馬区に拠点を置く、
             <br />
-            ECビジネスに特化したITソリューション企業です。
+            ECビジネスに特化した<br className="block sm:hidden" />ITソリューション企業です。
           </p>
         </div>
 
-        <div className="relative mx-auto px-4 w-full bg-white pb-[0px] sm:pb-[20px]">
+        <div className="bg-white relative mx-auto px-4 w-full pt-[30px] sm:pt-[20px] pb-[0px] sm:pb-[20px]">
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div
               className={`text-center lg:text-left transition-all duration-1000 delay-1000 ${
@@ -134,8 +134,9 @@ export default function Page() {
             </div>
 
             {/* Right side bubbles in triangular layout */}
-            <div className="scale-70 sm:scale-100 mx-auto -mt-[50px] -mb-[50px] sm:mt-auto sm:mb-auto ">
-              <div className="relative w-[495px] h-[385px]">
+            <div className="flex justify-center items-center">
+              <div className="scale-70 sm:scale-100 -mt-[50px] -mb-[50px] sm:mt-auto sm:mb-auto">
+                <div className="relative w-[495px] h-[385px]">
                 {/* IT Solution - top center */}
                 <div
                   className={`absolute top-4 left-0 transition-all duration-1000 delay-1100 ${
@@ -196,6 +197,7 @@ export default function Page() {
                     </div>
                   </div>
                 </div>
+                </div>
               </div>
             </div>
           </div>
@@ -207,8 +209,8 @@ export default function Page() {
             <div className="relative mb-10">
               <div className="relative z-10 text-center">
                 <div className="">
-                  <h3 className="font-mplus-rounded text-5xl font-thin mb-4">E-commerce</h3>
-                  <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
+                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-4 text-5xl font-thin inline md:block">E-commerce</h3>
+                  <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     長年にわたる輸入・小売業で培った経験と、
                     <br />
                     自社ECサイト「ジュエリーミュージアム」運営で得た実践的なノウハウを活かし、
@@ -230,7 +232,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-0 right-0 pointer-events-none">
+              <div className="absolute top-0 right-0 scale-70 lg:scale-100 pointer-events-none">
                 <img
                   src="/images/about/about-01_mobile.png"
                   alt="E-commerce Mobile Shadow"
@@ -255,7 +257,7 @@ export default function Page() {
               <div className="relative z-10 text-center">
                 <div className="">
                   <h3 className="font-mplus-rounded text-5xl font-thin mb-4">Creative</h3>
-                  <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
+                  <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     アニメーション制作、Webサイト制作
                     <br />
                     自社ECサイト「ジュエリーミュージアム」の商品開発、
@@ -310,8 +312,8 @@ export default function Page() {
             <div className="relative z-50">
               <div className="text-center">
                 <div className="">
-                  <h3 className="font-mplus-rounded bg-white/85 md:bg-transparent px-8 py-4 text-5xl font-thin inline md:block">IT Solutions</h3>
-                  <p className="mb-4 bg-white/85 p-8 leading-relaxed inline-block">
+                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-0 text-5xl font-thin inline md:block">IT Solutions</h3>
+                  <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     ECサイト運営の効率化を支援する
                     <br />
                     自社サービス「Rakubo」の開発・提供に加え、
