@@ -408,7 +408,7 @@ export default function Page() {
                   <br />
                   そして、結果的に業績向上にも繋がると信じています。
                   <br />
-                  新しい価値創造に時間を使えるようになる<br className="hidden sm:block"/>世界を目指します。
+                  新しい価値創造に時間を使えるようになる<br className="block sm:hidden"/>世界を目指します。
                 </p>
               </div>
               <div className="absolute z-0 -left-[50px] sm:-left-[40px] lg:left-0 top-[350px] sm:-top-[10px] lg:-top-[30px]">
