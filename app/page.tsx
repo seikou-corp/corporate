@@ -111,9 +111,13 @@ export default function Page() {
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            株式会社 SEIKOU は、<br className="block sm:hidden" />東京都練馬区に拠点を置く、
+            株式会社 SEIKOU は、
+            <br className="block sm:hidden" />
+            東京都練馬区に拠点を置く、
             <br />
-            ECビジネスに特化した<br className="block sm:hidden" />ITソリューション企業です。
+            ECビジネスに特化した
+            <br className="block sm:hidden" />
+            ITソリューション企業です。
           </p>
         </div>
 
@@ -137,66 +141,66 @@ export default function Page() {
             <div className="flex justify-center items-center">
               <div className="scale-70 sm:scale-100 -mt-[50px] -mb-[50px] sm:mt-auto sm:mb-auto">
                 <div className="relative w-[495px] h-[385px]">
-                {/* IT Solution - top center */}
-                <div
-                  className={`absolute top-4 left-0 transition-all duration-1000 delay-1100 ${
-                    isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
-                  }`}
-                >
-                  <div className="relative group">
-                    <img
-                      src="/images/about/about-01_bubble-it.svg"
-                      alt="IT Solution"
-                      className="w-[220px] h-auto transform group-hover:scale-110 transition-transform duration-300 animate-float"
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold">
-                      <div className="text-center relative -top-3">
-                        <p className="text-5xl mb-1">IT</p>
-                        <p className="text-base">Solution</p>
+                  {/* IT Solution - top center */}
+                  <div
+                    className={`absolute top-4 left-0 transition-all duration-1000 delay-1100 ${
+                      isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+                    }`}
+                  >
+                    <div className="relative group">
+                      <img
+                        src="/images/about/about-01_bubble-it.svg"
+                        alt="IT Solution"
+                        className="w-[220px] h-auto transform group-hover:scale-110 transition-transform duration-300 animate-float"
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold">
+                        <div className="text-center relative -top-3">
+                          <p className="text-5xl mb-1">IT</p>
+                          <p className="text-base">Solution</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Creative - bottom left */}
-                <div
-                  className={`absolute bottom-0 left-6 transition-all duration-1000 delay-1300 ${
-                    isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
-                  }`}
-                >
-                  <div className="relative group">
-                    <img
-                      src="/images/about/about-01_bubble-creative.svg"
-                      alt="Creative"
-                      className="w-[260px] h-auto transform group-hover:scale-110 transition-transform duration-300 animate-float-slow"
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold">
-                      <p className="text-4xl mb-1">Creative</p>
-                      <p className="text-base">Design</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* E-commerce - top right */}
-                <div
-                  className={`absolute top-14 right-0 transition-all duration-1000 delay-1200 ${
-                    isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
-                  }`}
-                >
-                  <div className="relative group">
-                    <img
-                      src="/images/about/about-01_bubble-sales.svg"
-                      alt="E-commerce"
-                      className="w-[240px] h-auto transform group-hover:scale-110 transition-transform duration-300 animate-float-delayed"
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold">
-                      <div className="text-center relative -top-1">
-                        <p className="text-3xl mb-1">E-commerce</p>
-                        <p className="text-base">Sales</p>
+                  {/* Creative - bottom left */}
+                  <div
+                    className={`absolute bottom-0 left-6 transition-all duration-1000 delay-1300 ${
+                      isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+                    }`}
+                  >
+                    <div className="relative group">
+                      <img
+                        src="/images/about/about-01_bubble-creative.svg"
+                        alt="Creative"
+                        className="w-[260px] h-auto transform group-hover:scale-110 transition-transform duration-300 animate-float-slow"
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold">
+                        <p className="text-4xl mb-1">Creative</p>
+                        <p className="text-base">Design</p>
                       </div>
                     </div>
                   </div>
-                </div>
+
+                  {/* E-commerce - top right */}
+                  <div
+                    className={`absolute top-14 right-0 transition-all duration-1000 delay-1200 ${
+                      isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+                    }`}
+                  >
+                    <div className="relative group">
+                      <img
+                        src="/images/about/about-01_bubble-sales.svg"
+                        alt="E-commerce"
+                        className="w-[240px] h-auto transform group-hover:scale-110 transition-transform duration-300 animate-float-delayed"
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold">
+                        <div className="text-center relative -top-1">
+                          <p className="text-3xl mb-1">E-commerce</p>
+                          <p className="text-base">Sales</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -209,7 +213,9 @@ export default function Page() {
             <div className="relative mb-10">
               <div className="relative z-10 text-center">
                 <div className="flex flex-col items-center">
-                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-4 text-5xl font-thin inline">E-commerce</h3>
+                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-4 text-5xl font-thin inline">
+                    E-commerce
+                  </h3>
                   <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     長年にわたる輸入・小売業で培った経験と、
                     <br />
@@ -312,7 +318,9 @@ export default function Page() {
             <div className="relative z-50">
               <div className="text-center">
                 <div className="flex flex-col items-center">
-                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-0 text-5xl font-thin inline">IT Solutions</h3>
+                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-0 text-5xl font-thin inline">
+                    IT Solutions
+                  </h3>
                   <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     ECサイト運営の効率化を支援する
                     <br />
@@ -355,10 +363,11 @@ export default function Page() {
               <p className="text-[0.85rem] md:text-base leading-[2rem]">
                 長年の輸入・小売業を通じてマイナス要因を減らし、私たちは仕入・運営の機能を最適化しました。
                 <br />
-                「日々の課題解決に追われ、本来のマーケティング戦略に時間を割けないお客様」<span className="inline sm:hidden">、</span>
-                <br className="hidden sm:block"/>
+                「日々の課題解決に追われ、本来のマーケティング戦略に時間を割けないお客様」
+                <span className="inline sm:hidden">、</span>
+                <br className="hidden sm:block" />
                 その悩み、私たちは解決します。EC運営のプロフェッショナルとして、
-                <br className="hidden sm:block"/>
+                <br className="hidden sm:block" />
                 マーケター・クリエーターとして蓄積してきた知見をビジネスに実装します。
                 <br />
                 EC運営者の皆様が、創造的な仕事に集中できる未来を目指し続けて下さい。
@@ -410,7 +419,9 @@ export default function Page() {
                   <br />
                   そして、結果的に業績向上にも繋がると信じています。
                   <br />
-                  新しい価値創造に時間を使えるようになる<br className="block sm:hidden"/>世界を目指します。
+                  新しい価値創造に時間を使えるようになる
+                  <br className="block sm:hidden" />
+                  世界を目指します。
                 </p>
               </div>
               <div className="absolute z-0 -left-[50px] sm:-left-[40px] lg:left-0 top-[350px] sm:-top-[10px] lg:-top-[30px]">
@@ -471,10 +482,15 @@ export default function Page() {
                   }}
                 ></div>
                 <p className="px-4 text-base mb-8 leading-[2rem] tracking-wider">
-                  ジュエリーミュージアム、ファッション関連の
-                  商品を専門的に取り扱うオンラインショップ
-                  デザインは顧客にも高評価をいただいており、
-                  海外のブランドも興味、お客様に特別な商品 を提供します。
+                  <span className="font-bold">
+                    ジュエリーミュージアムは、お客様に「特別な輝き」をお届けする、アレルギー対応・高品質ジュエリーのオンラインショップです。
+                  </span>
+                  <br />
+                  長年のECサイト運営で培った経験と、
+                  <span className="font-bold">楽天年間ランキングで5年連続１位</span>
+                  を獲得したネックレスチェーンをはじめとする確かな実績が、私たちの品質とデザイン力を証明しています。
+                  独自のデザインと厳選された素材を追求し、お客様一人ひとりの日常に寄り添う特別なジュエリーを提供。また、新しいシルクブランド「Sugar
+                  and Pepper」も好評発売中です。
                 </p>
 
                 {/* Social Media Icons */}
@@ -535,12 +551,33 @@ export default function Page() {
                   </a>
                 </div>
 
-                <div className="mt-10 flex gap-4 px-4">
-                  <a href="https://www.rakuten.co.jp/seikou-kids/" target="_blank" rel="noopener noreferrer">
-                    <button className="bg-gradient-to-r from-[#a5deb3] to-[#fff36c] font-semibold px-12 py-4 rounded-full text-base hover:shadow-lg transition-all flex items-center gap-4 cursor-pointer">
-                      ジュエリーミュージアム 楽天店
+                <div className="mt-10 flex flex-wrap gap-4 px-4">
+                  <a
+                    href="https://www.rakuten.co.jp/seikou-kids/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="w-[250px] bg-gradient-to-r from-[#a5deb3] to-[#fff36c] font-semibold px-12 py-4 rounded-full text-base hover:shadow-lg transition-all flex items-center gap-4 cursor-pointer">
+                      楽天店
                       <Image
                         src="/images/about/about-01_arrow-r.png"
+                        className="ml-auto"
+                        alt="Arrow"
+                        width={10}
+                        height={10}
+                      />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.jewelry-museum.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="w-[250px] bg-gradient-to-r from-[#a5deb3] to-[#fff36c] font-semibold px-12 py-4 rounded-full text-base hover:shadow-lg transition-all flex items-center gap-4 cursor-pointer">
+                      オフィシャル店
+                      <Image
+                        src="/images/about/about-01_arrow-r.png"
+                        className="ml-auto"
                         alt="Arrow"
                         width={10}
                         height={10}
@@ -584,16 +621,19 @@ export default function Page() {
                   }}
                 ></div>
                 <p className="px-4 text-base mb-8 leading-[2rem] tracking-wider">
-                  Rakuboは、ネットショップ運営を効率化するAPI開放型の一元管理サービスです。セールの自動化、商品ページ更新、在庫管理など、業務の最適化をサポートします。
+                  <span className="font-bold">Rakuboは、楽天市場やShopifyのネットショップ運営を「もっと楽に、もっと効率的に」変革する、オールインワン業務支援アプリです。</span><br />
+                  日々の煩雑な作業に追われ、本来注力すべき戦略や創造的な仕事に時間を割けない――そんなEC運営者の皆様の課題を、Rakuboが解決します。
+                  <span className="font-bold">AIと自動化</span>の力で、楽天ランキングバナーの自動表示、高評価レビューの自動掲載、HTML知識不要の特集ページ作成、複雑なセール設定まで、あらゆる業務を効率化。
                 </p>
 
                 <div className="flex gap-4 px-4">
                   <a href="https://www.rakubo.com" target="_blank" rel="noopener noreferrer">
-                    <button className="bg-gradient-to-r from-[#a5deb3] to-[#fff36c] font-semibold px-12 py-4 rounded-full text-base hover:shadow-lg transition-all flex items-center gap-4 cursor-pointer">
+                    <button className="w-[250px] bg-gradient-to-r from-[#a5deb3] to-[#fff36c] font-semibold px-12 py-4 rounded-full text-base hover:shadow-lg transition-all flex items-center gap-4 cursor-pointer">
                       Rakubo を詳しく
                       <Image
                         src="/images/about/about-01_arrow-r.png"
                         alt="Arrow"
+                        className="ml-auto"
                         width={10}
                         height={10}
                       />

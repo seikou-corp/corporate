@@ -469,7 +469,7 @@ export default function CompanyPage() {
                       連 絡 先
                     </td>
                     <td className="px-6 py-2 text-sm w-full leading-[1.8rem]">
-                      TEL 050-5879-0380　　EMAIL info@seikou-corp.com
+                      TEL 050-1725-1113　　EMAIL info@seikou-corp.com
                     </td>
                   </tr>
                   <tr className="bg-[#f8f4f1] ">
