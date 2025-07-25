@@ -67,7 +67,7 @@ export default function RootLayout({
     >
       <body className="antialiased min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1 -top-[100px] relative font-noto-sans-jp">
+        <main className="flex-1 -top-[100px] -mb-[230px] relative font-noto-sans-jp">
           {children}
         </main>
         <CorporateFooter />

@@ -5,7 +5,7 @@ export function CorporateFooter() {
   return (
     <footer className="relative w-full mt-20 top-20">
       <svg 
-        className="absolute top-[1px] w-full h-24 -translate-y-full"
+        className="absolute top-[1px] w-full md:w-full h-5 md:h-15 xl:h-24 -translate-y-full"
         preserveAspectRatio="none"
         viewBox="0 0 1440 100"
         xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +30,8 @@ export function CorporateFooter() {
           background: 'linear-gradient(90deg, #a9d3b2 0%, #c4e6a6 33%, #f0f89d 66%, #fffd7a 100%)',
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-20 pb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             <div>
               <h3 className="text-white text-lg font-bold mb-6">ABOUT US</h3>
               <ul className="space-y-3">
@@ -75,10 +75,10 @@ export function CorporateFooter() {
             </div>
 
             <div>
-              <h3 className="text-gray-900 text-lg font-bold mb-6">RECRUIT</h3>
+              <h3 className="text-gray-900/30 pointer-events-none text-lg font-bold mb-6">RECRUIT</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/recruit" className="text-gray-900 hover:text-gray-700 transition-colors">
+                  <Link href="/recruit" className="text-gray-900/30 pointer-events-none hover:text-gray-700 transition-colors">
                     募集要項
                   </Link>
                 </li>
@@ -86,10 +86,10 @@ export function CorporateFooter() {
             </div>
 
             <div>
-              <h3 className="text-gray-900 text-lg font-bold mb-6">NEWS</h3>
+              <h3 className="text-gray-900/30 pointer-events-none text-lg font-bold mb-6">NEWS</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/news" className="text-gray-900 hover:text-gray-700 transition-colors">
+                  <Link href="/news" className="text-gray-900/30 pointer-events-none hover:text-gray-700 transition-colors">
                     お知らせ
                   </Link>
                 </li>
@@ -97,18 +97,18 @@ export function CorporateFooter() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gray-700/20">
-            <div className="flex items-center mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-between pt-8 border-t border-gray-700/20">
+            <div className="flex flex-col md:flex-row gap-4 items-center mb-4 md:mb-0">
               <Image
                 src="/images/logo.png"
                 alt="SEIKOU"
                 width={200}
                 height={80}
-                className="h-16 w-auto mr-8"
+                className="h-16 w-auto mr-4"
               />
               <div className="text-gray-900 text-sm">
                 <p>株式会社 SEIKOU</p>
-                <p>〒178-0061 東京都練馬区大泉学園町 7-21-15</p>
+                <p>〒178-0061 東京都練馬区大泉学園町6-19-40 サンキビル2F</p>
               </div>
             </div>
 

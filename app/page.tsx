@@ -11,7 +11,7 @@ export default function Page() {
   }, [])
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden pb-50">
       {/* Top gradient area */}
       <div
         className="w-full pb-[500px] md:pb-[700px] relative -mt-[1px] pt-12"
@@ -208,8 +208,8 @@ export default function Page() {
             {/* E-commerce Section */}
             <div className="relative mb-10">
               <div className="relative z-10 text-center">
-                <div className="">
-                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-4 text-5xl font-thin inline md:block">E-commerce</h3>
+                <div className="flex flex-col items-center">
+                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-4 text-5xl font-thin inline">E-commerce</h3>
                   <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     長年にわたる輸入・小売業で培った経験と、
                     <br />
@@ -255,7 +255,7 @@ export default function Page() {
             {/* Creative Section */}
             <div className="relative mb-10 z-0">
               <div className="relative z-10 text-center">
-                <div className="">
+                <div className="flex flex-col items-center">
                   <h3 className="font-mplus-rounded text-5xl font-thin mb-4">Creative</h3>
                   <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     アニメーション制作、Webサイト制作
@@ -311,8 +311,8 @@ export default function Page() {
             {/* IT Solutions Section */}
             <div className="relative z-50">
               <div className="text-center">
-                <div className="">
-                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-0 text-5xl font-thin inline md:block">IT Solutions</h3>
+                <div className="flex flex-col items-center">
+                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-0 text-5xl font-thin inline">IT Solutions</h3>
                   <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
                     ECサイト運営の効率化を支援する
                     <br />
@@ -536,7 +536,7 @@ export default function Page() {
                 </div>
 
                 <div className="mt-10 flex gap-4 px-4">
-                  <a href="https://www.rakubo.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.rakuten.co.jp/seikou-kids/" target="_blank" rel="noopener noreferrer">
                     <button className="bg-gradient-to-r from-[#a5deb3] to-[#fff36c] font-semibold px-12 py-4 rounded-full text-base hover:shadow-lg transition-all flex items-center gap-4 cursor-pointer">
                       ジュエリーミュージアム 楽天店
                       <Image

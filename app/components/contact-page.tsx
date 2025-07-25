@@ -1,33 +1,49 @@
-"use client"
+'use client'
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { MapPin, Phone, Mail, Clock, VoicemailIcon as Fax } from "lucide-react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useState } from "react"
-import { contactFormSchema, type ContactFormData } from "@/lib/validation"
-import { submitContactForm } from "@/actions/contact"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
-import Image from "next/image"
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+import { MapPin, Phone, Mail, Clock, VoicemailIcon as Fax } from 'lucide-react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useState } from 'react'
+import { contactFormSchema, type ContactFormData } from '@/lib/validation'
+import { submitContactForm } from '@/actions/contact'
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form'
+import Image from 'next/image'
 
 function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitMessage, setSubmitMessage] = useState<{ type: "success" | "error"; message: string } | null>(null)
+  const [submitMessage, setSubmitMessage] = useState<{
+    type: 'success' | 'error'
+    message: string
+  } | null>(null)
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
-      lastName: "",
-      firstName: "",
-      company: "",
-      email: "",
-      phone: "",
-      inquiryType: "",
-      message: "",
+      lastName: '',
+      firstName: '',
+      company: '',
+      email: '',
+      phone: '',
+      inquiryType: '',
+      message: '',
     },
   })
 
@@ -39,15 +55,15 @@ function ContactForm() {
       const result = await submitContactForm(data)
 
       if (result.success) {
-        setSubmitMessage({ type: "success", message: result.message })
+        setSubmitMessage({ type: 'success', message: result.message })
         form.reset()
       } else {
-        setSubmitMessage({ type: "error", message: result.message })
+        setSubmitMessage({ type: 'error', message: result.message })
       }
     } catch (error) {
       setSubmitMessage({
-        type: "error",
-        message: "送信中にエラーが発生しました。しばらく時間をおいて再度お試しください。",
+        type: 'error',
+        message: '送信中にエラーが発生しました。しばらく時間をおいて再度お試しください。',
       })
     } finally {
       setIsSubmitting(false)
@@ -67,7 +83,11 @@ function ContactForm() {
                   姓 <span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="山田" className="border-gray-300 focus:border-gray-500" {...field} />
+                  <Input
+                    placeholder="山田"
+                    className="border-gray-300 focus:border-gray-500"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage className="text-xs" />
               </FormItem>
@@ -82,7 +102,11 @@ function ContactForm() {
                   名 <span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="太郎" className="border-gray-300 focus:border-gray-500" {...field} />
+                  <Input
+                    placeholder="太郎"
+                    className="border-gray-300 focus:border-gray-500"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage className="text-xs" />
               </FormItem>
@@ -97,7 +121,11 @@ function ContactForm() {
             <FormItem>
               <FormLabel className="text-sm font-medium text-gray-700">会社名</FormLabel>
               <FormControl>
-                <Input placeholder="株式会社サンプル" className="border-gray-300 focus:border-gray-500" {...field} />
+                <Input
+                  placeholder="株式会社サンプル"
+                  className="border-gray-300 focus:border-gray-500"
+                  {...field}
+                />
               </FormControl>
               <FormMessage className="text-xs" />
             </FormItem>
@@ -195,9 +223,9 @@ function ContactForm() {
         {submitMessage && (
           <div
             className={`p-4 rounded-lg text-sm ${
-              submitMessage.type === "success"
-                ? "bg-green-50 text-green-800 border border-green-200"
-                : "bg-red-50 text-red-800 border border-red-200"
+              submitMessage.type === 'success'
+                ? 'bg-green-50 text-green-800 border border-green-200'
+                : 'bg-red-50 text-red-800 border border-red-200'
             }`}
           >
             {submitMessage.message}
@@ -210,7 +238,7 @@ function ContactForm() {
             className="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 disabled:opacity-50"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "送信中..." : "送信する"}
+            {isSubmitting ? '送信中...' : '送信する'}
           </Button>
         </div>
 
@@ -227,12 +255,17 @@ function ContactForm() {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div
+      className="text-[#272859] min-h-screen relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(to bottom, #a5e0b4 0%, #fff36c 40%, #f2f1ed 100%)',
+      }}
+    >
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="pt-30">
         <div className="max-w-6xl mx-auto px-4 py-8">
-          <h1 className="text-3xl font-light text-gray-900 text-center">お問い合わせ</h1>
-          <p className="text-gray-600 text-center mt-2 font-light">Contact Us</p>
+          <h1 className="text-4xl md:text-5xl font-light text-white text-center">お問い合わせ</h1>
+          <p className="text-2xl text-white text-center mt-2 font-light">Contact Us</p>
         </div>
       </div>
 
@@ -240,7 +273,7 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="border-0 shadow-sm">
+            <Card className="border-0 rounded-none">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-medium text-gray-900">会社情報</CardTitle>
                 <p className="text-sm text-gray-600">Company Information</p>
@@ -255,7 +288,7 @@ export default function ContactPage() {
                       <br />
                       東京都練馬区大泉学園町6-19-40
                       <br />
-                      サンキビル2階
+                      サンキビル2F
                     </p>
                     <p className="text-gray-500 text-xs mt-2">
                       6-19-40, Oizumi Gakuencho, Nerima-ku, Tokyo 178-0061
@@ -277,7 +310,7 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5 text-gray-500 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">メールアドレス</p>
-                    <p className="text-gray-600">info@company.co.jp</p>
+                    <p className="text-gray-600">info@seikou-corp.com</p>
                   </div>
                 </div>
 
@@ -301,7 +334,7 @@ export default function ContactPage() {
             </Card>
 
             {/* Map */}
-            <Card className="border-0 shadow-sm">
+            {/* <Card className="border-0 rounded-none">
               <CardContent className="p-0">
                 <Image
                   src="/images/company_04.jpg"
@@ -311,14 +344,16 @@ export default function ContactPage() {
                   className="w-full h-auto rounded-lg"
                 />
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           {/* Contact Form */}
           <div>
-            <Card className="border-0 shadow-sm">
+            <Card className="border-0 rounded-none">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl font-medium text-gray-900">お問い合わせフォーム</CardTitle>
+                <CardTitle className="text-xl font-medium text-gray-900">
+                  お問い合わせフォーム
+                </CardTitle>
                 <p className="text-sm text-gray-600">Contact Form</p>
               </CardHeader>
               <CardContent>

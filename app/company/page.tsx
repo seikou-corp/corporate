@@ -11,7 +11,7 @@ export default function CompanyPage() {
   }, [])
 
   return (
-    <div>
+    <div className="pb-50">
       <div
         className="text-[#272859] min-h-screen relative overflow-hidden"
         style={{
@@ -407,10 +407,10 @@ export default function CompanyPage() {
                   </tr>
                   <tr className="bg-[#f8f4f1] ">
                     <td className="px-6 py-1 text-sm font-medium min-w-[150px] text-center">
-                      2025 年 5 月 1 日
+                      2025 年 8 月 1 日
                     </td>
                     <td className="px-6 py-1 text-sm w-full leading-[1.8rem]">
-                      EC サイト運営効率化サービス「Rakubo」をローンチ
+                      ECサイト運営効率化サービス「Rakubo」をローンチ
                     </td>
                   </tr>
                 </tbody>

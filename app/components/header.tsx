@@ -1,11 +1,13 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 export function Header() {
   const pathname = usePathname()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const isActive = (path: string) => {
     if (path === '/') return pathname === '/'
@@ -135,7 +137,10 @@ export function Header() {
             </Link>
           </nav>
 
-          <button className="md:hidden flex items-center">
+          <button 
+            className="md:hidden flex items-center"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
@@ -147,6 +152,77 @@ export function Header() {
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-50 bg-black bg-opacity-50">
+          <div className="fixed right-0 top-0 h-full w-64 bg-white shadow-xl">
+            <div className="flex items-center justify-between p-4 border-b">
+              <h2 className="text-lg font-semibold">Menu</h2>
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <nav className="p-4">
+              <Link
+                href="/"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-3 px-4 text-cyan-400 hover:bg-gray-50 rounded-lg transition-colors"
+              >
+                ABOUT US
+              </Link>
+              <div className="py-3 px-4">
+                <p className="text-gray-900 font-medium mb-2">BUSINESS/SERVICES</p>
+                <Link
+                  href="/business/rakubo"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  Rakubo
+                </Link>
+              </div>
+              <Link
+                href="/company"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-3 px-4 text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              >
+                COMPANY
+              </Link>
+              <Link
+                href="/recruit"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-3 px-4 text-gray-300 pointer-events-none"
+              >
+                RECRUIT
+              </Link>
+              <Link
+                href="/news"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-3 px-4 text-gray-300 pointer-events-none"
+              >
+                NEWS
+              </Link>
+              <Link
+                href="/contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block mt-4 mx-4 bg-[#fff36d] text-gray-900 px-6 py-3 text-center font-medium hover:bg-[#a9d3b2] transition-colors rounded-lg"
+              >
+                CONTACT
+              </Link>
+            </nav>
+          </div>
+        </div>
+      )}
 
       {/* Top Wave SVG */}
       <div className="relative bottom-0">
