@@ -213,10 +213,10 @@ export default function Page() {
             <div className="relative mb-10">
               <div className="relative z-10 text-center">
                 <div className="flex flex-col items-center">
-                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-4 text-5xl font-thin inline">
+                  <h3 className="font-mplus-rounded bg-white/80 md:bg-transparent px-8 py-4 text-5xl font-thin inline">
                     E-commerce
                   </h3>
-                  <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
+                  <p className="mb-4 bg-white/80 p-8 leading-relaxed inline-block">
                     長年にわたる輸入・小売業で培った経験と、
                     <br />
                     自社ECサイト「ジュエリーミュージアム」運営で得た実践的なノウハウを活かし、
@@ -238,7 +238,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-0 right-0 scale-70 lg:scale-100 pointer-events-none">
+              <div className="absolute -top-[110px] md:top-0 -right-[30px] md:right-0 scale-70 lg:scale-100 pointer-events-none">
                 <img
                   src="/images/about/about-01_mobile.png"
                   alt="E-commerce Mobile Shadow"
@@ -263,7 +263,7 @@ export default function Page() {
               <div className="relative z-10 text-center">
                 <div className="flex flex-col items-center">
                   <h3 className="font-mplus-rounded text-5xl font-thin mb-4">Creative</h3>
-                  <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
+                  <p className="mb-4 bg-white/80 p-8 leading-relaxed inline-block">
                     アニメーション制作、Webサイト制作
                     <br />
                     自社ECサイト「ジュエリーミュージアム」の商品開発、
@@ -318,10 +318,10 @@ export default function Page() {
             <div className="relative z-50">
               <div className="text-center">
                 <div className="flex flex-col items-center">
-                  <h3 className="font-mplus-rounded bg-white/85 backdrop-blur-md md:bg-transparent px-8 py-0 text-5xl font-thin inline">
+                  <h3 className="font-mplus-rounded bg-white/80 md:bg-transparent px-8 py-4 text-5xl font-thin inline">
                     IT Solutions
                   </h3>
-                  <p className="mb-4 bg-white/85 backdrop-blur-md p-8 leading-relaxed inline-block">
+                  <p className="mb-4 bg-white/80 p-8 leading-relaxed inline-block">
                     ECサイト運営の効率化を支援する
                     <br />
                     自社サービス「Rakubo」の開発・提供に加え、
@@ -451,20 +451,20 @@ export default function Page() {
 
       {/* Content Section */}
       {/* Fix offset for content */}
-      <div className="-top-[650px] md:-top-[900px] relative -mb-[650px] md:-mb-[900px] ">
-        <div className="pb-20">
-          <div className="relative -left-[50px] lg:left-0 mb-[10px] lg:mb-[60px]">
-            <Image
-              src="/images/about/about-01_content.png"
-              alt="CONTENT"
-              width={1219}
-              height={94}
-              className={`w-[600px] lg:w-[800px] transition-all duration-700 ${
-                isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
-              }`}
-            />
+      <div id="business" className="-top-[750px] md:-top-[900px] relative -mb-[650px] md:-mb-[900px] ">
+        <div className="relative mb-8 md:mb-16 gap-0 flex- flex-col">
+          <div className="flex flex-col md:flex-row md:items-end max-w-6xl mx-auto">
+            <h2 className="ml-5 xl:ml-3 font-mplus-rounded relative -bottom-[1.7rem] md:-bottom-[2rem] text-[#272859] text-[5rem] md:text-[6rem] font-thin">
+              CONTENT
+            </h2>
+            <div className="block md:hidden top-0 -left-[0] w-9/10 z-10 border border-[#272859]"></div>
+            <span className="text-xl font-semibold tracking-[0.5rem] pl-[30px] md:pl-[70px] pb-[15px]">
+              事業内容
+            </span>
           </div>
+          <div className="hidden md:block top-0 -left-[0] w-6/10 z-10 border border-[#272859]"></div>
         </div>
+
         {/* Rakubo */}
         <div className="max-w-6xl mx-auto px-4 text-[#272859] flex flex-wrap gap-12">
           <div className="relative bg-[#f4f3f0] overflow-hidden">
@@ -621,9 +621,13 @@ export default function Page() {
                   }}
                 ></div>
                 <p className="px-4 text-base mb-8 leading-[2rem] tracking-wider">
-                  <span className="font-bold">Rakuboは、楽天市場やShopifyのネットショップ運営を「もっと楽に、もっと効率的に」変革する、オールインワン業務支援アプリです。</span><br />
+                  <span className="font-bold">
+                    Rakuboは、楽天市場やShopifyのネットショップ運営を「もっと楽に、もっと効率的に」変革する、オールインワン業務支援アプリです。
+                  </span>
+                  <br />
                   日々の煩雑な作業に追われ、本来注力すべき戦略や創造的な仕事に時間を割けない――そんなEC運営者の皆様の課題を、Rakuboが解決します。
-                  <span className="font-bold">AIと自動化</span>の力で、楽天ランキングバナーの自動表示、高評価レビューの自動掲載、HTML知識不要の特集ページ作成、複雑なセール設定まで、あらゆる業務を効率化。
+                  <span className="font-bold">AIと自動化</span>
+                  の力で、楽天ランキングバナーの自動表示、高評価レビューの自動掲載、HTML知識不要の特集ページ作成、複雑なセール設定まで、あらゆる業務を効率化。
                 </p>
 
                 <div className="flex gap-4 px-4">

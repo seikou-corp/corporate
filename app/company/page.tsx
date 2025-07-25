@@ -91,9 +91,9 @@ export default function CompanyPage() {
                 <p className="text-sm leading-[1.8rem] text-justify pb-[100px]">
                   ジュエリーミュージアムでは、ママさんスタッフを中心に、明るく和気あいあいとした職場環境を大切にしています。お客様に楽しんでいただける製品を作ることを常に意識し、チーム一丸となって日々努力を重ねています。その結果、私たちのネックレスチェーンは、楽天年間ランキングで5年連続1位を獲得するという実績を誇ります。私たちの会社はアルバイトを含めて13名の小さなチームですが、Rakuboの導入により業務の効率化を実現し、更なる成長を目指しています。今後もお客様に愛されるブランドとして、共に成長し続けたいと考えています。
                   {/* Name at bottom */}
-                  <div className="mt-10 text-right">
-                    <p className="text-4xl font-thin">Konomi Ozaki</p>
-                  </div>
+                  <span className="block mt-10 text-right">
+                    <span className="text-4xl font-thin">Konomi Ozaki</span>
+                  </span>
                 </p>
               </div>
             </div>
@@ -153,9 +153,9 @@ export default function CompanyPage() {
                 <p className="text-sm leading-[1.8rem] text-justify">
                   プログラマー/Rakubo開発者。ロードアイランド・スクール・オブ・デザイン（RISD）でアニメーションを専攻。卒業後、株式会社SEIKOUでWEB制作とジュエリーミュージアム立ち上げに従事。アイ・エム・ジェイでのディレクション経験を経て、アニメーションへの情熱から一度退職し、CGアニメーション業界へ。東映アニメーションでは「THE FIRST SLAM DUNK」等でキャラクターモデラー兼テクニカルディレクターとして活躍。アートとプログラミングの両面から制作に貢献しました。2023年にSEIKOUに復帰後も、東映アニメーション向けのCG制作効率化システムを開発。現在は自社EC運営の経験から生まれた「Rakubo」を通じて、EC事業者の業務効率化を支援しています。
                   {/* Name at bottom */}
-                  <div className="mt-10 text-right">
-                    <p className="text-4xl font-thin">Narimitsu Ozaki</p>
-                  </div>
+                  <span className="block mt-10 text-right">
+                    <span className="text-4xl font-thin">Narimitsu Ozaki</span>
+                  </span>
                 </p>
               </div>
 
@@ -282,7 +282,7 @@ export default function CompanyPage() {
       </div>
 
       {/* HISTORY Section */}
-      <div className="bg-white py-12 md:py-24">
+      <div id="history" className="bg-white py-12 md:py-24">
         {/* History Title */}
         <div className="relative mb-8 md:mb-16 gap-0 flex- flex-col">
           <div className="flex flex-col md:flex-row items-end max-w-6xl mx-auto">
@@ -421,7 +421,7 @@ export default function CompanyPage() {
       </div>
 
       {/* COMPANY INFO Section */}
-      <div className="bg-white pb-12 md:pb-24">
+      <div id="profile" className="bg-white pb-12 md:pb-24">
         {/* 会社概要 */}
         <div className="relative mb-8 md:mb-16 gap-0 flex- flex-col">
           <div className="flex flex-col md:flex-row items-end max-w-6xl mx-auto">

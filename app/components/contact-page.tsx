@@ -303,6 +303,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium text-gray-900">電話番号</p>
                     <p className="text-gray-600">050-1725-1113</p>
+                    <p className="text-sm text-gray-600">お電話での問い合わせ<br/>月 10:00 ～ 15:00 ／ 火～金 10:00 ～ 13:00 ／ 土日祝日は休業</p>
                   </div>
                 </div>
 
