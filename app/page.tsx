@@ -75,12 +75,13 @@ export default function Page() {
 
       <div className="relative -top-[650px] md:-top-[900px]">
         <div className="h-[400px] md:h-[500px] flex flex-col">
-          <img
+          <Image
             src="/images/about/about-2waves-bg.svg"
             alt="wavy background"
-            width="100%"
-            height="100%"
-            className="object-fill pointer-events-none"
+            width={2560}
+            height={331}
+            className="w-full h-full object-fill pointer-events-none"
+            priority
           />
           <div className="bg-gradient-to-b from-[rgba(255,255,255,0.30)] to-white w-full h-full inline-block"></div>
         </div>

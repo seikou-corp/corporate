@@ -2,5 +2,9 @@
  * @type {import('next').NextConfig}
  */
 module.exports = {
-  /* ここにオプション設定を書きます */
+  images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
 };
