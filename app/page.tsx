@@ -80,7 +80,7 @@ export default function Page() {
             alt="wavy background"
             width={2560}
             height={331}
-            className="w-full h-full object-fill pointer-events-none"
+            className="w-full h-full object-cover pointer-events-none"
             priority
           />
           <div className="bg-gradient-to-b from-[rgba(255,255,255,0.30)] to-white w-full h-full inline-block"></div>
