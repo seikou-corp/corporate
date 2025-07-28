@@ -303,7 +303,7 @@ export function Header() {
 
       {/* Top Wave SVG */}
       <div className="relative bottom-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 50" width="100%">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1280 50" width="100%">
           <path
             d="M -217.6 41 C -57.6 41 -57.6 15 102.4 15 C 262.4 15 262.4 29 422.4 29 C 582.4 29 582.4 4 742.4 4 C 902.4 4 902.4 23 1062.4 23 C 1222.4 23 1222.4 3 1382.4 3 L 1280 0 L 0 0 Z"
             fill="#FFF"

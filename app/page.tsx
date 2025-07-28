@@ -502,7 +502,7 @@ export default function Page() {
                     className="p-2 bg-[#272859] text-white rounded-full hover:bg-[#424ea4] hover:shadow-lg transition-all"
                   >
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns="https://www.w3.org/2000/svg"
                       x="0px"
                       y="0px"
                       width="30"
@@ -520,7 +520,7 @@ export default function Page() {
                     className="p-2 bg-[#272859] text-white rounded-full hover:bg-[#424ea4] hover:shadow-lg transition-all"
                   >
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns="https://www.w3.org/2000/svg"
                       x="0px"
                       y="0px"
                       width="30"
@@ -538,7 +538,7 @@ export default function Page() {
                     className="p-2 bg-[#272859] text-white rounded-full hover:bg-[#424ea4] hover:shadow-lg transition-all"
                   >
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns="https://www.w3.org/2000/svg"
                       x="0px"
                       y="0px"
                       width="30"

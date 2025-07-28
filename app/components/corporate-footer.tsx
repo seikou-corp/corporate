@@ -18,7 +18,7 @@ export function CorporateFooter() {
         className="absolute top-[1px] w-full md:w-full h-5 md:h-15 xl:h-24 -translate-y-full"
         preserveAspectRatio="none"
         viewBox="0 0 1440 100"
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
       >
         <defs>
           <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
