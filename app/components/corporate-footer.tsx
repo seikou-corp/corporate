@@ -144,7 +144,7 @@ export function CorporateFooter() {
               />
               <div className="text-gray-900 text-sm">
                 <p>株式会社 SEIKOU</p>
-                <p>〒178-0061 東京都練馬区大泉学園町6-19-40 サンキビル2F</p>
+                <p>〒178-0061 東京都練馬区大泉学園町1-1-10 杉浦ビル2F</p>
               </div>
             </div>
 

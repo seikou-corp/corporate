@@ -79,7 +79,7 @@ export default function CompanyPage() {
                     className="h-[60px] w-auto"
                   />
                   <div className="relative -mt-[45px] mr-[100px] md:mr-none text-right md:text-left ml-none md:ml-[135px] mb-4">
-                    <p className="text-white text-lg font-thin">代表取締役　尾崎 木実</p>
+                    <p className="text-white text-lg font-thin">代表取締役　社長　尾崎 木実</p>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function CompanyPage() {
                   className="h-[60px] w-auto"
                 />
                 <div className="relative -mt-[45px] ml-[35px] mb-4">
-                  <p className="text-white text-lg font-thin">副社長／技術責任者　尾崎 成光</p>
+                  <p className="text-white text-lg font-thin">代表取締役　副社長　尾崎 成光</p>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function CompanyPage() {
                     className="h-[60px] w-auto"
                   />
                   <div className="relative -mt-[45px] ml-[45px] mb-4">
-                    <p className="text-white text-lg font-thin">副社長／技術責任者　尾崎 成光</p>
+                    <p className="text-white text-lg font-thin">代表取締役　副社長　尾崎 成光</p>
                   </div>
                 </div>
               </div>
@@ -262,13 +262,13 @@ export default function CompanyPage() {
           <div className="bg-white p-8 lg:p-12 text-[#272859]">
             <h2 className="text-6xl font-extralight tracking-wider">ACCESS</h2>
             <p className="text-sm mb-6 text-right">
-              〒178-0061 東京都練馬区大泉学園町6-19-40 サンキビル2F
+              〒178-0061 東京都練馬区大泉学園町1-1-10 杉浦ビル2F
             </p>
 
             {/* Google Maps iframe */}
             <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23071.87313736364!2d139.58987412511433!3d35.77136249976807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e939009e7c83%3A0x8508016d4506ed8b!2z44CSMTc4LTAwNjEg5p2x5Lqs6YO957e06aas5Yy65aSn5rOJ5a2m5ZyS55S677yW5LiB55uu77yR77yZ4oiS77yU77yQIOOCteODs-OCreODk-ODqw!5e0!3m2!1sja!2sjp!4v1753384181174!5m2!1sja!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.35715735668248!2d139.5886528403571!3d35.75782100558279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018eeca0c6e98f9%3A0xed4c0f706214f797!2z5pel5pys44CB44CSMTc4LTAwNjEg5p2x5Lqs6YO957e06aas5Yy65aSn5rOJ5a2m5ZyS55S677yR5LiB55uu77yR4oiS77yR77yQ!5e0!3m2!1sja!2sus!4v1762352833855!5m2!1sja!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

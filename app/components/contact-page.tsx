@@ -286,14 +286,14 @@ export default function ContactPage() {
                     <p className="text-gray-600 text-sm mt-1">
                       〒178-0061
                       <br />
-                      東京都練馬区大泉学園町6-19-40
+                      東京都練馬区大泉学園町1-1-10
                       <br />
-                      サンキビル2F
+                      杉浦ビル2F
                     </p>
                     <p className="text-gray-500 text-xs mt-2">
-                      6-19-40, Oizumi Gakuencho, Nerima-ku, Tokyo 178-0061
+                      1-1-10, Oizumi Gakuencho, Nerima-ku, Tokyo 178-0061
                       <br />
-                      Sanki Building 2F
+                      Sugihira Building 2F
                     </p>
                   </div>
                 </div>
